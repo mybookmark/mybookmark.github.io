@@ -1,1 +1,57 @@
-"Hello World" 
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Access the bootstrap Css like this,
+		Spring boot will handle the resource mapping automcatically -->
+	<link rel="stylesheet" href="webjars/bootstrap/3.3.7/css/bootstrap.min.css" />	
+    <link rel="stylesheet" href="/css/main.css"/>	
+    
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-top">
+	  <div class="container-fluid">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#news-navbar" aria-expanded="false">		        
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+	      </button>
+	    	<a id="navbar_main" class="navbar-brand navbar-custom" href="/main">新闻书签</a>
+	    </div>
+	
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="news-navbar">
+	      <ul class="nav navbar-nav">
+	        <li><a id="navbar_world" href="/main">主页</a></li>
+			<li><a id="navbar_world" href="/world">世界新闻</a></li>
+			<li><a id="navbar_sea" href="/sea">东南亚新闻</a></li>  
+	      </ul>
+	
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>	     
+	<div class="container contain-template">
+		<div class="starter-template">
+			<div class="appTitle-template">新闻书签</div>
+			<div class="appMessage-template"></div>
+		</div>
+
+		<div class="content-template">
+			<div class="newsColumn-template" id="worldNewsColumn">
+				<div class="newsColumnTitle-template">世界新闻</div>
+			</div>
+			
+			<div class="rightSidebar-template">
+			</div>
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="/js/content.js"></script>
+</body>
+
+</html>

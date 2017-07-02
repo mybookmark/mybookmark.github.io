@@ -1,0 +1,132 @@
+img
+{
+	max-width: 100%;
+}
+
+.contain-template
+{
+	margin-top: 60px; 
+}
+.navbar-top
+{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color:#f5f5f5;
+    border:0
+}
+.navbar-custom {
+    //color:#FFFFFF !important;
+    font-family:SimHei;
+}
+
+.worldNews-selected-template
+{
+	background-color:#228b22 !important;
+}
+
+.main-selected-template
+{
+	background-color:#4169e1 !important;
+}
+.starter-template{
+	margin-bottom:40px;
+}
+.appTitle-template{
+	color:#000000;
+	font-size:60px;
+	font-family:SimHei;
+}
+.appMessage-template
+{
+	color:#454545;
+	font-size:12px;
+}
+
+a.newsContainerLink-template
+{
+	display: block;
+	text-decoration:none;
+}
+
+.newsColumnTitle-template
+{
+	color:#000040;
+	font-size:30px;
+	font-family:SimHei;
+	font-weight: bold;
+	margin-bottom:10px;
+}
+
+
+.newsContainer-template
+{
+	 margin-bottom:20px;	 
+}
+
+.newsTitle-template
+{
+	color:#454545;
+	font-size:20px;
+	font-family:SimHei;
+	font-weight: bold;
+}
+
+.newsMeta-template
+{
+	color:#757575;
+	font-size:14px;
+}
+.newsDescription-template
+{
+	font-size:16px
+}
+
+.rightSidebar-template
+{
+	width:20%;
+}
+
+.moreBtn-template
+{
+	width:100%;
+}
+
+.newsColumn-template
+	{
+		width:50%;
+	}
+
+@media screen and (max-width: 960px) {
+
+.newsColumn-template
+	{
+		width:80%;
+	}
+
+}
+@media screen and (max-width: 768px) {
+
+.newsColumn-template
+	{
+		width:100%;
+	}
+
+}
+@media screen and (max-width: 550px) {
+
+.newsColumn-template
+	{
+		width:100%;
+	}
+
+}
+@media screen and (max-width: 320px) {
+
+	.newsColumn-template
+	{
+		width:100%;
+	}
+
+}
