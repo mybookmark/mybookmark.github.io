@@ -1,4 +1,4 @@
-var mybookmark_main = {
+
 	var worldContentCounter = 9;
 	var json_sourceInfo;
 	var sourceMap ={};
@@ -138,4 +138,3 @@ var mybookmark_main = {
 		return 0;
 	}
 
-}
