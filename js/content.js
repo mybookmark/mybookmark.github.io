@@ -1,7 +1,7 @@
 
 	var worldContentCounter = 9;
-	var json_sourceInfo ={};
-	var sourceMap ={};
+	var json_sourceInfo = [];
+	var sourceMap = [];
 	var allItemList=[];
 	var newsCounter =0;
 	function getMore() {
