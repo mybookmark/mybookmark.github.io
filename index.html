@@ -11,36 +11,42 @@
   <script src="/js/content.js"></script>
 </head>
 <body>
-
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">新闻书签</a>
+<nav class="navbar navbar-default navbar-top">
+   <div class="container-fluid">
+      <div class="navbar-header">
+	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#news-navbar" aria-expanded="false">		        
+	<span class="icon-bar"></span>
+	<span class="icon-bar"></span>
+	<span class="icon-bar"></span>
+     	</button>
+	<a id="navbar_main" class="navbar-brand navbar-custom" href="/main">新闻书签</a>
     </div>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="#">主页</a></li>
-      <li><a href="#">Page 1</a></li>
-      <li><a href="#">Page 2</a></li>
-      <li><a href="#">Page 3</a></li>
-    </ul>
-  </div>
+    <div class="collapse navbar-collapse" id="news-navbar">
+      <ul class="nav navbar-nav">
+	<li><a id="navbar_world" href="#">主页</a></li>
+		<li><a id="navbar_world" href="#">${worldNews}</a></li>
+		<li><a id="navbar_sea" href="#">${seaNews}</a></li>  
+      </ul>
+
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
 </nav>
   
 <div class="container contain-template">
-		<div class="starter-template">
-			<div class="appTitle-template">新闻书签</div>
-			<div class="appMessage-template"></div>
-		</div>
+   <div class="starter-template">
+	<div class="appTitle-template">新闻书签</div>
+	<div class="appMessage-template"></div>
+   </div>
 
-		<div class="content-template">
-			<div class="newsColumn-template" id="worldNewsColumn">
-				<div class="newsColumnTitle-template">世界新闻</div>
-			</div>
-			
-			<div class="rightSidebar-template">
-			</div>
-		</div>
+   <div class="content-template">
+	<div class="newsColumn-template" id="worldNewsColumn">
+	   <div class="newsColumnTitle-template">世界新闻</div>
 	</div>
+
+	<div class="rightSidebar-template">
+	</div>
+   </div>
+</div>
 
 </body>
 </html>
