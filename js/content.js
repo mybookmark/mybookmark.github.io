@@ -1,6 +1,6 @@
 
 	var worldContentCounter = 9;
-	var json_sourceInfo;
+	var json_sourceInfo ={};
 	var sourceMap ={};
 	var allItemList=[];
 	var newsCounter =0;
