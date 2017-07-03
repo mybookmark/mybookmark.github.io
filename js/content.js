@@ -34,7 +34,6 @@
 
 				fullListContent = fullListContent + itemContent;
 			}
-			$("#loadingLogo").hide();
 			columnID.html(fullListContent);
 		}
 		 newsCounter++;
