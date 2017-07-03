@@ -21,7 +21,7 @@ img
     font-family:SimHei;
 }
 .navbar-selected-template{
-   background-color: lightgrey;
+   background-color: lightgrey !important;
    font-style:bold;
 }
 
