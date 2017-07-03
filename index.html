@@ -18,11 +18,11 @@
 	<span class="icon-bar"></span>
 	<span class="icon-bar"></span>
      	</button>
-	<a id="navbar_main" class="navbar-brand navbar-custom" href="#">新闻书签</a>
+	<a id="navbar_main" class="navbar-brand navbar-custom" href="/">新闻书签</a>
     </div>
     <div class="collapse navbar-collapse" id="news-navbar">
       <ul class="nav navbar-nav">
-	    <li><a id="navbar_main" class="navbar-selected-template" href="#">主页</a></li>
+	    <li><a id="navbar_main" class="navbar-selected-template" href="/">主页</a></li>
 		<li><a id="navbar_china" href="/china.html">中国</a></li>
 		<li><a id="navbar_world" href="#">世界</a></li>
 		<li><a id="navbar_sea" href="#">东南亚</a></li>  
@@ -41,6 +41,7 @@
    <div class="content-template">
 	<div class="newsColumn-template">
 	   <div class="newsColumnTitle-template">新闻</div>
+		   <div id="loadingLogo"><img src="/img/loading.gif"></div> 
            <div id="mainNewsColumn"></div>
 	</div>
 
@@ -52,7 +53,6 @@
 <script>
 	var sourceInfo_main = [];
 	window.onload = function() {
-		
 		sourceInfo_main[0] = {id: "bbc", name: "BBC中文网", link: "http://feeds.bbci.co.uk/zhongwen/simp/rss.xml"};
 		sourceInfo_main[1] = {id: "reuters", name: "路透中文网", link: "http://cn.reuters.com/rssFeed/CNTopGenNews/"};
 		sourceInfo_main[2] = {id: "nytimes", name: "纽约时报中文网", link: "https://cn.nytimes.com/rss.html"};

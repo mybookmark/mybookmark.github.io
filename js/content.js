@@ -1,6 +1,3 @@
-
-	var worldContentCounter = 9;
-	var sourceInfo_main = [];
 	var sourceMap = [];
 	var allItemList=[];
 	var newsCounter =0;
@@ -37,6 +34,7 @@
 
 				fullListContent = fullListContent + itemContent;
 			}
+			$("#loadingLogo").hide();
 			columnID.html(fullListContent);
 		}
 		 newsCounter++;
