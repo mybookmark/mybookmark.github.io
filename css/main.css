@@ -20,16 +20,10 @@ img
     //color:#FFFFFF !important;
     font-family:SimHei;
 }
-
-.worldNews-selected-template
-{
-	background-color:#228b22 !important;
+.navbar-selected-template{
+	
 }
 
-.main-selected-template
-{
-	background-color:#4169e1 !important;
-}
 .starter-template{
 	margin-bottom:40px;
 }
