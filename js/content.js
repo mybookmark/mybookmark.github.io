@@ -11,7 +11,7 @@
 
 		if (newsCounter == (sourceInfo.length -1))
 		{
-			console.log("reach here");
+//			console.log("reach here");
 			allItemList.sort(compare);
 			for (j =0; j <allItemList.length; j++)
 			{    		
@@ -62,6 +62,15 @@
 		
 		if (link.includes("zaobao"))
 			return sourceMap["zaobao"];
+
+		if (link.includes("ftchinese"))
+			return sourceMap["ftchinese"];
+
+		if (link.includes("malaysiakini"))
+			return sourceMap["malaysiakini"];
+
+		if (link.includes("wsj"))
+			return sourceMap["wsj"];
 	}
 	function loadRSS(sourceInfo, columnID)
 	{
