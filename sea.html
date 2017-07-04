@@ -23,10 +23,10 @@
     <div class="collapse navbar-collapse" id="news-navbar">
       <ul class="nav navbar-nav">
 	    <li><a id="navbar_main" href="/">主页</a></li>
-		<li><a id="navbar_china" class="navbar-selected-template" href="/china.html">中国</a></li>
+		<li><a id="navbar_china" href="/china.html">中国</a></li>
 		<li><a id="navbar_world" href="/world.html">世界</a></li>
-		<li><a id="navbar_sea" href="/sea.html">东南亚</a></li>
-		<li><a id="navbar_world" href="/entertainment.html">娱乐</a></li> 
+		<li><a id="navbar_sea" class="navbar-selected-template" href="/sea.html">东南亚</a></li>
+		<li><a id="navbar_world" href="/entertainment.html">娱乐</a></li>  
       </ul>
 
     </div><!-- /.navbar-collapse -->
@@ -41,8 +41,8 @@
 
    <div class="content-template">
 	<div class="newsColumn-template">
-	   <div class="newsColumnTitle-template">中国新闻</div>
-       <div id="chinaNewsColumn"><img src="/img/loading.gif"></div>
+	   <div class="newsColumnTitle-template">东南亚新闻</div>
+       <div id="seaNewsColumn"><img src="/img/loading.gif"></div>
 	</div>
 
 	<div class="rightSidebar-template">
@@ -53,17 +53,14 @@
 <script>
 	var sourceInfo_china = [];
 	window.onload = function() {
-		
-		sourceInfo_china[0] = {id: "sina", name: "新浪网", link: "http://rss.sina.com.cn/news/china/focus15.xml"};
-		sourceInfo_china[1] = {id: "qq", name: "腾讯网", link: "http://news.qq.com/newsgn/rss_newsgn.xml"};
-		sourceInfo_china[2] = {id: "ft", name: "FT中文网", link: "http://www.ftchinese.com/rss/news"};
-		sourceInfo_china[3] = {id: "mingpao", name: "明报新闻网", link: "https://news.mingpao.com/rss/pns/s00013.xml"};
-
-		for (x = 0; x < sourceInfo_china.length; x++)
+		sourceInfo_sea= {id: "sina", name: "联合早报网", link: "http://www.zaobao.com.sg/ssi/rss/gj.xml"};
+		sourceInfo_sea[1] = {id: "malaysiakini", name: "当今大马", link: "http://www.malaysiakini.com/zh/news.rss"};
+	
+		for (x = 0; x < sourceInfo_sea.length; x++)
 		{	
-			sourceMap[sourceInfo_china[x].id]= sourceInfo_china[x].name;
+			sourceMap[sourceInfo_sea[x].id]= sourceInfo_sea[x].name;
 		}
-		loadRSS(sourceInfo_china, $("#chinaNewsColumn"));
+		loadRSS(sourceInfo_china, $("#seaNewsColumn"));
 	}
 </script>
 </body>
