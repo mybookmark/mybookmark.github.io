@@ -26,7 +26,7 @@
 		// set navbar status for every page
 		var currentPage = window.location.href;
 		console.log("add class" + currentPage);
-		if (currentPage.includes("index"))
+		if (currentPage.includes("index") || ! currentPage.includes(".html"))
 		{
 			$("#navbar_main").addClass("navbar-selected-template");			 
 		}else if (currentPage.includes("china"))
