@@ -3,11 +3,12 @@
 	var newsCounter =0;
 	var titleVal ="新聞書簽";
 	
-	$(window).load(function(){
+	$(document).ready(function(){
 		$(this).scrollTop(0);
-		$('#includeNavBar').load('/navbar.html');
-		 
-		initValue();
+		$('#includeNavBar').load('/navbar.html', function(responseTxt, statusTxt, xhr){
+		      initValue();
+		});
+		
 	});
 
 	function toggleReadMore(element){
