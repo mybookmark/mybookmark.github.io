@@ -25,22 +25,22 @@
 		// set navbar status for every page
 		var currentPage = window.location.href;
 		console.log("add class" + currentPage);
-		if (currentPage.indexOf("index") !== -1)
+		if (currentPage.includes("index"))
 		{
 			$("#navbar_main").addClass("navbar-selected-template");			 
-		}else if (currentPage.indexOf("china") !== -1)
+		}else if (currentPage.includes("china"))
 		{
 			$("#navbar_china").addClass("navbar-selected-template");
-		}else if (currentPage.indexOf("world") !== -1)
+		}else if (currentPage.includes("world"))
 		{
 			$("#navbar_world").addClass("navbar-selected-template");
-		}else if (currentPage.indexOf("sea") !== -1)
+		}else if (currentPage.includes("sea"))
 		{
 			$("#navbar_sea").addClass("navbar-selected-template");
-		}else if (currentPage.indexOf("finance") !== -1)
+		}else if (currentPage.includes("finance"))
 		{
 			$("#navbar_finance").addClass("navbar-selected-template");
-		}else if (currentPage.indexOf("entertainment") !== -1)
+		}else if (currentPage.includes("entertainment"))
 		{
 			$("#navbar_entertainment").addClass("navbar-selected-template");
 		}
