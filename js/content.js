@@ -153,7 +153,7 @@
 				 });		
 				console.log("loadRSS() successfully from " + sourceInfo[i].id);
 			}// end of sourceInfo for loop
-			$(".newsDescription-template").hide()
+			$(".newsDescription-template").hide();
 		}
 	}
 	function compare(a,b) 
