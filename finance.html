@@ -40,11 +40,9 @@
 		{	
 			sourceMap[sourceInfo_finance[x].id]= sourceInfo_finance[x].name;
 		}
-		loadRSS(sourceInfo_finance, $("#financeNewsColumn"));	
+		loadRSS(sourceInfo_finance, $("#financeNewsColumn"));					
+		initValue();
 		
-		$('#includeNavBar').load(function(){
-		   initValue();
-		});
 	}
 </script>
 </body>
