@@ -7,8 +7,6 @@
 		$(this).scrollTop(0);
 		$('#includeNavBar').load('/navbar.html');
 		
-		$(".newsDescription-template").hide();
-		
 		$("div.readMore").click(function(){
 			$(this).hide();
 			$(this).next().show();
@@ -154,6 +152,7 @@
 				console.log("loadRSS() successfully from " + sourceInfo[i].id);
 			}// end of sourceInfo for loop
 			$(".newsDescription-template").hide();
+			console.log("complete loadRSS()------------------------");
 		}
 	}
 	function compare(a,b) 
