@@ -126,6 +126,14 @@ a.newsContainerLink-template
 
 }
 
-div.newsDescription-template{
+.newsDescription-template{
 	display:none;
+}
+
+.readMore{
+	color:#005999;
+}
+
+.readMore :hover{
+     font-style:underline;
 }
