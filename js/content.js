@@ -3,6 +3,9 @@
 	var newsCounter =0;
 	var titleVal ="新聞書簽";
 	
+	$(document).ready(function(){
+		$(this).scrollTop(0);
+	});
 	function initValue(){
 		// set title in every page
 		$("#mybookmarkTitle").text(titleVal);
