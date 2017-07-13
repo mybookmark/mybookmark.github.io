@@ -5,8 +5,7 @@
 	
 	$(document).ready(function(){
 		$(this).scrollTop(0);
-		$('#includeNavBar').load('/navbar.html');
-		initValue();		
+		$('#includeNavBar').load('/navbar.html');		
 	});
 	
 	function toggleReadMore(element){
@@ -25,7 +24,8 @@
 		
 		if (currentPage.indexOf("index") !== -1)
 		{
-			$("#navbar_main").addClass("navbar-selected-template");			 
+			$("#navbar_main").addClass("navbar-selected-template");
+			$("#navbar_main").attr('href','/');
 		}else if (currentPage.indexOf("china") !== -1)
 		{
 			$("#navbar_china").addClass("navbar-selected-template");
@@ -33,15 +33,19 @@
 		}else if (currentPage.indexOf("world") !== -1)
 		{
 			$("#navbar_world").addClass("navbar-selected-template");
+			$("#navbar_world").attr('href','/world.html');
 		}else if (currentPage.indexOf("sea") !== -1)
 		{
 			$("#navbar_sea").addClass("navbar-selected-template");
+			$("#navbar_sea").attr('href','/sea.html');
 		}else if (currentPage.indexOf("finance") !== -1)
 		{
 			$("#navbar_finance").addClass("navbar-selected-template");
+			$("#navbar_finance").attr('href','/finance.html');
 		}else if (currentPage.indexOf("entertainment") !== -1)
 		{
 			$("#navbar_entertainment").addClass("navbar-selected-template");
+			$("#navbar_entertainment").attr('href','/entertainment.html');
 		}
 				
 	}
@@ -72,10 +76,10 @@
 				itemContent = itemContent + "<div class='newsMeta-template'>"
 						+ author + " - "
 						+ varPubDate+ "</div></a>";
+				itemContent = itemContent + "<div class='readMore' onclick='toggleReadMore(this)'>更多 ...</div>";
 				itemContent = itemContent + "<div class='newsDescription-template'>"
-						+ varDescription + "</div>";
-				itemContent = itemContent + "<div class='readMore' onclick='toggleReadMore(this)'>更多 ...</div></div>";
-				
+						+ varDescription + "</div></div>";
+
 				fullListContent = fullListContent + itemContent;
 			}
 			columnID.html(fullListContent);
@@ -165,4 +169,3 @@
 	  
 		return 0;
 	}
-
