@@ -150,8 +150,7 @@
 						loadNews(sourceInfo, columnID);
 				 });		
 				console.log("loadRSS() successfully from " + sourceInfo[i].id);
-			}// end of sourceInfo for loop
-			$(".newsDescription-template").hide();
+			}// end of sourceInfo for loop			
 			console.log("complete loadRSS()------------------------");
 		}
 	}
