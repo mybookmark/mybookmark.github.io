@@ -4,9 +4,40 @@
 	var titleVal ="新聞書簽";
 	
 	function initValue(){
+		// set title in every page
 		$("#mybookmarkTitle").text(titleVal);
 		$("navbar_main").text(titleVal);
 		$(".appTitle-template").text(titleVal);
+		
+		// set navbar status for every page
+		var currentPage = window.location.href;
+		
+		if (currentPage.indexOf("index") !== -1)
+		{
+			$("#navbar_main").addClass("navbar-selected-template");
+			$("#navbar_main").attr('href','/');
+		}else if (currentPage.indexOf("china") !== -1)
+		{
+			$("#navbar_china").addClass("navbar-selected-template");
+			$("#navbar_china").attr('href','/china.html');
+		}else if (currentPage.indexOf("world") !== -1)
+		{
+			$("#navbar_world").addClass("navbar-selected-template");
+			$("#navbar_world").attr('href','/world.html');
+		}else if (currentPage.indexOf("sea") !== -1)
+		{
+			$("#navbar_sea").addClass("navbar-selected-template");
+			$("#navbar_sea").attr('href','/sea.html');
+		}else if (currentPage.indexOf("finance") !== -1)
+		{
+			$("#navbar_finance").addClass("navbar-selected-template");
+			$("#navbar_finance").attr('href','/finance.html');
+		}else if (currentPage.indexOf("entertainment") !== -1)
+		{
+			$("#navbar_entertainment").addClass("navbar-selected-template");
+			$("#navbar_entertainment").attr('href','/entertainment.html');
+		}
+				
 	}
 	
 	function loadNews(sourceInfo, columnID){
