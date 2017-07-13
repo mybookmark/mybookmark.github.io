@@ -40,6 +40,7 @@
 		}else if (currentPage.includes("finance"))
 		{
 			$("#navbar_finance").addClass("navbar-selected-template");
+			console.log("log " + $("#navbar_finance").hasClass("navbar-selected-template"));
 		}else if (currentPage.includes("entertainment"))
 		{
 			$("#navbar_entertainment").addClass("navbar-selected-template");
