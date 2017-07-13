@@ -62,7 +62,7 @@
 				var varDescription = $(allItemList[j]).find('description').text();
 				var varPubDate = $(allItemList[j]).find('pubDate').text();				
 				var author =getAuthor(varLink);
-				
+				console.out(vaDescription);
 				if (varDescription.indexOf("</div") !== -1)
 				{
 				   varDescription = varDescription.substring(0, varDescription.indexOf("</div>")) +"</div>";
