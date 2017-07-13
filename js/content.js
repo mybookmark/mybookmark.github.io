@@ -6,6 +6,11 @@
 	$(document).ready(function(){
 		$(this).scrollTop(0);
 		$('#includeNavBar').load('/navbar.html');
+		
+		$("div.readMore").click(function(){
+			$(this).hide();
+			$(this).next().show();
+		}
 	});
 	function initValue(){
 		// set title in every page
@@ -47,8 +52,8 @@
 	function loadNews(sourceInfo, columnID){
 		
 		var fullListContent = "";
-		console.log("counter = " + newsCounter);
-		console.log("allItemList = " + allItemList.length);
+		//console.log("counter = " + newsCounter);
+		//console.log("allItemList = " + allItemList.length);
 		var itemFixContent = "<div class='newsContainer-template'><div class='newsTitle-template'>";
 
 		if (newsCounter == (sourceInfo.length -1))
@@ -71,6 +76,7 @@
 				itemContent = itemContent + "<div class='newsMeta-template'>"
 						+ author + " - "
 						+ varPubDate+ "</div>";
+				itemContent = itemContent + "<div class='readMore'>更多 ...</div>";
 				itemContent = itemContent + "<div class='newsDescription-template'>"
 						+ varDescription + "</div></div></div></a>";
 
@@ -144,7 +150,8 @@
 						loadNews(sourceInfo, columnID);
 				 });		
 				console.log("loadRSS() successfully from " + sourceInfo[i].id);
-			}		
+			}// end of sourceInfo for loop
+			$(".newsDescription-template").hide()
 		}
 	}
 	function compare(a,b) 
