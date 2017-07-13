@@ -6,12 +6,8 @@
 	$(document).ready(function(){
 		$(this).scrollTop(0);
 		$('#includeNavBar').load('/navbar.html');
-		console.log("first loaded");
-	});
-	
-	$(window).load(function() {
-	    initValue();
-		console.log("last loaded");
+		 
+		initValue();
 	});
 
 	function toggleReadMore(element){
@@ -28,7 +24,7 @@
 		
 		// set navbar status for every page
 		var currentPage = window.location.href;
-		
+		console.log("add class" + currentPage);
 		if (currentPage.indexOf("index") !== -1)
 		{
 			$("#navbar_main").addClass("navbar-selected-template");			 
