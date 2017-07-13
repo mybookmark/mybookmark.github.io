@@ -5,8 +5,7 @@
 	
 	$(document).ready(function(){
 		$(this).scrollTop(0);
-		$('#includeNavBar').load('/navbar.html');
-		initValue();		
+		$('#includeNavBar').load('/navbar.html');				
 	});
 	
 	function toggleReadMore(element){
@@ -61,9 +60,10 @@
 				var varTitle =$(allItemList[j]).find('title').text();
 				var varLink = $(allItemList[j]).find('link').text();
 				var varDescription = $(allItemList[j]).find('description').text();
-				var varPubDate = $(allItemList[j]).find('pubDate').text();
-				 
+				var varPubDate = $(allItemList[j]).find('pubDate').text();				
 				var author =getAuthor(varLink);
+				
+				varDescription = varDescription.substring(0, varDescription.indexOf("</div>")) +"</div>";
 				
 				var itemContent = "<div class='newsContainer-template'><a href='" + varLink
 				+ "' class='newsContainerLink-template' target='_blank'>";
