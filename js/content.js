@@ -3,7 +3,7 @@
 	var newsCounter =0;
 	var titleVal ="新聞書簽";
 	
-	$(document).ready(function(){
+	$(window).load(function(){
 		$(this).scrollTop(0);
 		$('#includeNavBar').load('/navbar.html');
 		 
