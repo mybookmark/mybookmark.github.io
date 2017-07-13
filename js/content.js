@@ -8,9 +8,9 @@
 		$('#includeNavBar').load('/navbar.html');		
 	});
 	
-	function toggleReadMore(this){
-			$(this).hide();
-			$(this).next().show();
+	function toggleReadMore(element){
+			$(element).hide();
+			$(element).next().show();
 	}
 	
 	function initValue(){
