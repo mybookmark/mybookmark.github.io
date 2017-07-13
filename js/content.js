@@ -5,7 +5,10 @@
 	
 	$(document).ready(function(){
 		$(this).scrollTop(0);
-		$('#includeNavBar').load('/navbar.html');	
+		$('#includeNavBar').load('/navbar.html');
+		$('#includeNavBar').load(function() {
+			initValue();
+		});		
 	});
 	
 	function toggleReadMore(element){
