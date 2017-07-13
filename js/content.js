@@ -30,7 +30,6 @@
 		}else if (currentPage.indexOf("china") !== -1)
 		{
 			$("#navbar_china").addClass("navbar-selected-template");
-			$("#navbar_china").attr('href','/china.html');
 		}else if (currentPage.indexOf("world") !== -1)
 		{
 			$("#navbar_world").addClass("navbar-selected-template");
