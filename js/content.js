@@ -6,8 +6,9 @@
 	$(document).ready(function(){
 		$(this).scrollTop(0);
 		$('#includeNavBar').load('/navbar.html');	
-
-		initValue();		
+		$('#includeNavBar').load(function(){
+			initValue();
+		});
 	});
 	
 	function toggleReadMore(element){
