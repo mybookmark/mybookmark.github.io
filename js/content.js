@@ -64,6 +64,8 @@
 				var author =getAuthor(varLink);
 				
 				varDescription = varDescription.substring(0, varDescription.indexOf("</div>")) +"</div>";
+				varDescription = varDescription.replace('<strong>','');
+				varDescription = varDescription.replace('</strong>','');
 				
 				var itemContent = "<div class='newsContainer-template'><a href='" + varLink
 				+ "' class='newsContainerLink-template' target='_blank'>";
