@@ -5,13 +5,14 @@
 	
 	$(document).ready(function(){
 		$(this).scrollTop(0);
-		$('#includeNavBar').load('/navbar.html');
-		
-		$("div.readMore").click(function(){
+		$('#includeNavBar').load('/navbar.html');		
+	});
+	
+	function toggleReadMore(this){
 			$(this).hide();
 			$(this).next().show();
-		});
-	});
+	}
+	
 	function initValue(){
 		// set title in every page
 		$("#mybookmarkTitle").text(titleVal);
@@ -74,8 +75,8 @@
 				itemContent = itemContent + varTitle + "</div>";
 				itemContent = itemContent + "<div class='newsMeta-template'>"
 						+ author + " - "
-						+ varPubDate+ "</div>";
-				itemContent = itemContent + "<div class='readMore'>更多 ...</div>";
+						+ varPubDate+ "</div></a>";
+				itemContent = itemContent + "<div class='readMore' onclick='toggleReadMore(this)'>更多 ...</div>";
 				itemContent = itemContent + "<div class='newsDescription-template'>"
 						+ varDescription + "</div></div>";
 
