@@ -54,7 +54,6 @@
 		var fullListContent = "";
 		//console.log("counter = " + newsCounter);
 		//console.log("allItemList = " + allItemList.length);
-		var itemFixContent = "<div class='newsContainer-template'><div class='newsTitle-template'>";
 
 		if (newsCounter == (sourceInfo.length -1))
 		{
@@ -69,16 +68,16 @@
 				 
 				var author =getAuthor(varLink);
 				
-				var itemContent = "<a href='" + varLink
+				var itemContent = "<div class='newsContainer-template'><a href='" + varLink
 				+ "' class='newsContainerLink-template' target='_blank'>";
-				itemContent = itemContent + itemFixContent;
+				itemContent = itemContent + "<div class='newsTitle-template'>";
 				itemContent = itemContent + varTitle + "</div>";
 				itemContent = itemContent + "<div class='newsMeta-template'>"
 						+ author + " - "
-						+ varPubDate+ "</div></div></div></a>";
+						+ varPubDate+ "</div>";
 				itemContent = itemContent + "<div class='readMore'>更多 ...</div>";
 				itemContent = itemContent + "<div class='newsDescription-template'>"
-						+ varDescription + "</div>";
+						+ varDescription + "</div></div>";
 
 				fullListContent = fullListContent + itemContent;
 			}
