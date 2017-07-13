@@ -132,6 +132,7 @@ div.newsDescription-template{
 
 .readMore{
 	color:#005999;
+	cursor: pointer; 
 }
 
 .readMore :hover{
