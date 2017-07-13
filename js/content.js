@@ -1,7 +1,14 @@
 	var sourceMap = [];
 	var allItemList=[];
 	var newsCounter =0;
-
+	var titleVal ="新聞書簽";
+	
+	function initValue(){
+		$("#mybookmarkTitle").text(titleVal);
+		$("navbar_main").text(titleVal);
+		$(".appTitle-template").text(titleVal);
+	}
+	
 	function loadNews(sourceInfo, columnID){
 		
 		var fullListContent = "";
