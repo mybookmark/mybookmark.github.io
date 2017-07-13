@@ -7,6 +7,8 @@
 		$(this).scrollTop(0);
 		$('#includeNavBar').load('/navbar.html');
 		
+		$(".newsDescription-template").hide();
+		
 		$("div.readMore").click(function(){
 			$(this).hide();
 			$(this).next().show();
