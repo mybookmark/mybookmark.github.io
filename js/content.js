@@ -75,10 +75,10 @@
 				itemContent = itemContent + varTitle + "</div>";
 				itemContent = itemContent + "<div class='newsMeta-template'>"
 						+ author + " - "
-						+ varPubDate+ "</div>";
+						+ varPubDate+ "</div></div></div></a>";
 				itemContent = itemContent + "<div class='readMore'>更多 ...</div>";
 				itemContent = itemContent + "<div class='newsDescription-template'>"
-						+ varDescription + "</div></div></div></a>";
+						+ varDescription + "</div>";
 
 				fullListContent = fullListContent + itemContent;
 			}
