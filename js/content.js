@@ -10,7 +10,7 @@
 		$("div.readMore").click(function(){
 			$(this).hide();
 			$(this).next().show();
-		}
+		};
 	});
 	function initValue(){
 		// set title in every page
