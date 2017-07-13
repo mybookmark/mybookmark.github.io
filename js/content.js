@@ -11,7 +11,7 @@
 	function toggleReadMore(element){
 		console.log("toggle read more");
 			$(element).hide();
-			$(element).previous.show();
+			$(element).next().show();
 	}
 	
 	function initValue(){
@@ -71,10 +71,10 @@
 				itemContent = itemContent + varTitle + "</div>";
 				itemContent = itemContent + "<div class='newsMeta-template'>"
 						+ author + " - "
-						+ varPubDate+ "</div>";
+						+ varPubDate+ "</div></a>";				
+				itemContent = itemContent + "<div class='readMore' onclick='toggleReadMore(this)'>更多 ...</div>";
 				itemContent = itemContent + "<div class='newsDescription-template'>"
-						+ varDescription + "</div></a>";
-				itemContent = itemContent + "<div class='readMore' onclick='toggleReadMore(this)'>更多 ...</div></div>";
+						+ varDescription + "</div></div>";
 				
 				fullListContent = fullListContent + itemContent;
 			}
