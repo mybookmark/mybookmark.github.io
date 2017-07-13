@@ -75,11 +75,11 @@
 				itemContent = itemContent + varTitle + "</div>";
 				itemContent = itemContent + "<div class='newsMeta-template'>"
 						+ author + " - "
-						+ varPubDate+ "</div></a>";
-				itemContent = itemContent + "<div class='readMore' onclick='toggleReadMore(this)'>更多 ...</div>";
+						+ varPubDate+ "</div>";
 				itemContent = itemContent + "<div class='newsDescription-template'>"
-						+ varDescription + "</div></div>";
-
+						+ varDescription + "</div></a>";
+				itemContent = itemContent + "<div class='readMore' onclick='toggleReadMore(this)'>更多 ...</div></div>";
+				
 				fullListContent = fullListContent + itemContent;
 			}
 			columnID.html(fullListContent);
