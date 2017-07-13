@@ -5,11 +5,13 @@
 	
 	$(document).ready(function(){
 		$(this).scrollTop(0);
-		$('#includeNavBar').load('/navbar.html');			
+		$('#includeNavBar').load('/navbar.html');
+		console.log("first loaded");
 	});
 	
 	$(window).load(function() {
 	    initValue();
+		console.log("last loaded");
 	});
 
 	function toggleReadMore(element){
