@@ -5,6 +5,7 @@
 	
 	$(document).ready(function(){
 		$(this).scrollTop(0);
+		$('#includeNavBar').load('/navbar.html');
 	});
 	function initValue(){
 		// set title in every page
