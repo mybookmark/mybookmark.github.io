@@ -12,7 +12,7 @@
 	function toggleReadMore(element){
 		console.log("toggle read more");
 			$(element).hide();
-			$(element).previous().show();
+			$(element).prev().show();
 	}
 	
 	function initValue(){
