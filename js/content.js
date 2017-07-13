@@ -5,12 +5,13 @@
 	
 	$(document).ready(function(){
 		$(this).scrollTop(0);
-		$('#includeNavBar').load('/navbar.html');
-		$('#includeNavBar').load(function() {
-			initValue();
-		});		
+		$('#includeNavBar').load('/navbar.html');			
 	});
 	
+	$(window).load(function() {
+	    initValue();
+	});
+
 	function toggleReadMore(element){
 		console.log("toggle read more");
 			$(element).hide();
