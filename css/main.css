@@ -58,13 +58,13 @@ a.newsContainerLink-template
 .newsContainer-template-odd
 {
 	border-top:5px;
-	border-top-color:lightgrey;
-	border-bottom:18px;
+	border-top-color:gray;
+	border-bottom:20px;
 }
 
 .newsContainer-template-even
 {
-	 border-bottom:18px;
+	 border-bottom:20px;
 	 border-bottom-color:#f9f6f6;
 	 background-color:#f9f6f6;	 
 }
