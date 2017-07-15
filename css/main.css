@@ -58,14 +58,17 @@ a.newsContainerLink-template
 .newsContainer-template-odd
 {
 	padding: 10px;
-	border-top:1px;
-	border-top-style: solid;
-	border-top-color:gray;
+	border-bottom:1px;
+	border-bottom-style: solid;
+	border-bottom-color:lightgrey;
 }
 
 .newsContainer-template-even
 {
-	 padding: 10px;
+	padding: 10px;
+	border-bottom:1px;
+	border-bottom-style: solid;
+	border-bottom-color:lightgrey;
 }
 .newsTitle-template
 {
