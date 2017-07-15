@@ -73,7 +73,11 @@
 				   varDescription = varDescription.replace('<strong>','');
 				   varDescription = varDescription.replace('</strong>','');
 				}
-				var itemContent = "<div class='newsContainer-template'><a href='" + varLink
+				var rowType ="odd";
+				if (j%2 == 0)
+					rowType="even";
+				
+				var itemContent = "<div class='newsContainer-template-" +rowType+"'><a href='" + varLink
 				+ "' class='newsContainerLink-template' target='_blank'>";
 				itemContent = itemContent + "<div class='newsTitle-template'>";
 				itemContent = itemContent + varTitle + "</div>";

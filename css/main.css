@@ -55,11 +55,16 @@ a.newsContainerLink-template
 }
 
 
-.newsContainer-template
+.newsContainer-template-odd
 {
 	 margin-bottom:20px;	 
 }
 
+.newsContainer-template-even
+{
+	 margin-bottom:20px;
+	background-color:lightgrey;	 
+}
 .newsTitle-template
 {
 	color:#454545;
