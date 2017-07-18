@@ -72,6 +72,8 @@
 				   varDescription = varDescription.replace('<strong>','');
 				   varDescription = varDescription.replace('</strong>','');
 				}
+				
+				varDescription ="";
 				var rowType ="odd";
 				if (j%2 == 0)
 					rowType="even";
