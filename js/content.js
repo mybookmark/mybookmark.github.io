@@ -40,8 +40,7 @@
 			$("#navbar_sea").addClass("navbar-selected-template");
 		}else if (currentPage.includes("finance"))
 		{
-			$("#navbar_finance").addClass("navbar-selected-template");
-			console.log("log " + $("#navbar_finance").hasClass("navbar-selected-template"));
+			$("#navbar_finance").addClass("navbar-selected-template");			
 		}else if (currentPage.includes("entertainment"))
 		{
 			$("#navbar_entertainment").addClass("navbar-selected-template");
@@ -119,8 +118,8 @@
 		if (link.includes("zaobao"))
 			return sourceMap["zaobao"];
 
-		if (link.includes("ftchinese"))
-			return sourceMap["ftchinese"];
+		if (link.includes("ft"))
+			return sourceMap["ft"];
 
 		if (link.includes("malaysiakini"))
 			return sourceMap["malaysiakini"];
