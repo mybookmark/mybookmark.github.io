@@ -74,7 +74,9 @@
 				}
 				console.log("--------------------------------------");
 				console.log(varDescription);
+				console.log("-----------------@@---------------");
 				varDescription ="";
+				console.log(varDescription);
 				var rowType ="odd";
 				if (j%2 == 0)
 					rowType="even";
@@ -87,8 +89,8 @@
 						+ author + " - "
 						+ varPubDate+ "</div></a>";				
 				itemContent = itemContent + "<div class='readMore' onclick='toggleReadMore(this)'>更多 ...</div>";
-				//itemContent = itemContent + "<div class='newsDescription-template'>"
-				//		+ varDescription + "</div>";
+				itemContent = itemContent + "<div class='newsDescription-template'>"
+						+ varDescription + "</div>";
 				itemContent = itemContent + "</div>";
 				
 				fullListContent = fullListContent + itemContent;
