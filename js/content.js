@@ -72,8 +72,8 @@
 				   varDescription = varDescription.replace('<strong>','');
 				   varDescription = varDescription.replace('</strong>','');
 				}
-				if (varDescription.contains("AI")
-				    console.log(varDescription);
+				console.log("--------------------------------------");
+				console.log(varDescription);
 				varDescription ="";
 				var rowType ="odd";
 				if (j%2 == 0)
