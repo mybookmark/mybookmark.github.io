@@ -75,7 +75,7 @@
 				console.log("--------------------------------------");
 				console.log(varDescription);
 				console.log("-----------------@@---------------");
-				varDescription ="";
+				//varDescription ="";
 				console.log(varDescription);
 				var rowType ="odd";
 				if (j%2 == 0)
