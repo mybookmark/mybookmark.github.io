@@ -56,7 +56,7 @@
 
 		if (newsCounter == (sourceInfo.length -1))
 		{
-//			console.log("reach here");
+			console.log("reach here");
 			allItemList.sort(compare);
 			for (j =0; j <allItemList.length; j++)
 			{    		
@@ -86,8 +86,9 @@
 						+ author + " - "
 						+ varPubDate+ "</div></a>";				
 				itemContent = itemContent + "<div class='readMore' onclick='toggleReadMore(this)'>更多 ...</div>";
-				itemContent = itemContent + "<div class='newsDescription-template'>"
-						+ varDescription + "</div></div>";
+				//itemContent = itemContent + "<div class='newsDescription-template'>"
+				//		+ varDescription + "</div>";
+				itemContent = itemContent + "</div>";
 				
 				fullListContent = fullListContent + itemContent;
 			}
