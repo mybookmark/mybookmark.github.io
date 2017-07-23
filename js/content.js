@@ -71,11 +71,11 @@
 				   varDescription = varDescription.substring(0, varDescription.indexOf("</div>")) +"</div>";
 				   varDescription = varDescription.replace('<strong>','');
 				   varDescription = varDescription.replace('</strong>','');
+				   varDescription = varDescription.substring(0, varDescription.indexOf("<a>"));
 				}
 				console.log("--------------------------------------");
 				console.log(varDescription);
-				console.log("-----------------@@---------------");
-				varDescription = $(varDescription).htmlClean();
+				console.log("--------------------@@----------------");
 				console.log(varDescription);
 				var rowType ="odd";
 				if (j%2 == 0)
