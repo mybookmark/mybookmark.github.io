@@ -75,8 +75,7 @@
 				}
 				console.log("--------------------------------------");
 				console.log(varDescription);
-				console.log("--------------------@@----------------");
-				console.log(varDescription);
+				
 				var rowType ="odd";
 				if (j%2 == 0)
 					rowType="even";
