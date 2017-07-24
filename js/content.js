@@ -75,6 +75,7 @@
 				   {
 					   varDescription = varDescription.replace('<p...','');
 					   varDescription = varDescription.replace('...','...</p>');
+				   }
 				}
 				console.log("--------------------------------------");
 				console.log(varDescription);
