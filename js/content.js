@@ -74,8 +74,9 @@
 				 
 				   if (author == "FT中文网")
 				   {
-					   varDescription = varDescription.replace('<p...','');
-					   varDescription = varDescription.replace('...','...</p>');
+					   varDescription = varDescription.substring(0, varDescription.indexOf("</p>"));
+					   //varDescription = varDescription.replace('<p...','');
+					  // varDescription = varDescription.replace('...','...</p>');
 				   }
 				}
 				console.log("--------------------------------------");
