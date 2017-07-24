@@ -71,7 +71,7 @@
 				   varDescription = varDescription.substring(0, varDescription.indexOf("</div>")) +"</div>";
 				   varDescription = varDescription.replace('<strong>','');
 				   varDescription = varDescription.replace('</strong>','');
-				   if (author == "FT中文网")
+				 
 				   {
 					   varDescription = varDescription.replace('<p...','');
 					   varDescription = varDescription.replace('...','...</p>');
