@@ -66,6 +66,9 @@
 				var varPubDate = $(allItemList[j]).find('pubDate').text();				
 				var author =getAuthor(varLink);
 				
+				console.log("--------------------------------------");
+				console.log(varDescription);
+				
 				if (varDescription.indexOf("</div") !== -1)
 				{
 				   varDescription = varDescription.substring(0, varDescription.indexOf("</div>")) +"</div>";
@@ -73,14 +76,12 @@
 				   varDescription = varDescription.replace('</strong>','');
 				 
 				   if (author == "FT中文网")
-				   {
-					   varDescription = $(varDescription).text();
-					   //varDescription = varDescription.replace('<p...','');
-					  // varDescription = varDescription.replace('...','...</p>');
+				   {					   
+					   varDescription = varDescription.replace('<p...','');
+					   varDescription = varDescription.replace('...','...</p>');
 				   }
 				}
-				console.log("--------------------------------------");
-				console.log(varDescription);
+				
 				
 				var rowType ="odd";
 				if (j%2 == 0)
