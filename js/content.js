@@ -75,9 +75,8 @@
 				                                 
 				varDescription = varDescription.replace(/<p.../g,'');
 				//varDescription = varDescription.replace(/.../g,'...</p>');
-				  
-				
-				
+				console.log("--------------------------------------");
+				console.log(varDescription);
 				
 				var rowType ="odd";
 				if (j%2 == 0)
