@@ -74,9 +74,10 @@
 				varDescription = varDescription.replace(/<\/strong>/g,'');
 				                                 
 				varDescription = varDescription.replace(/<p.../g,'');
-				varDescription = varDescription.replace(/.../g,'...</p>');
 				console.log("--------------------------------------");
 				console.log(varDescription);
+				
+				varDescription = varDescription.replace(/... /g,'...</p>');
 				
 				var rowType ="odd";
 				if (j%2 == 0)
