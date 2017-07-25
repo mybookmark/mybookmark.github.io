@@ -73,7 +73,7 @@
 				{
 				   varDescription = varDescription.substring(0, varDescription.indexOf("</div>")) +"</div>";
 				   varDescription = varDescription.replace(/<strong>/g,'');
-				   varDescription = varDescription.replace(/</strong>/g,'');
+				   varDescription = varDescription.replace(/<\/strong>/g,'');
 				   
 				   varDescription = varDescription.replace(/<p.../g,'');
 				   varDescription = varDescription.replace(/.../g,'...</p>');
