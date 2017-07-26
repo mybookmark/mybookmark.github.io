@@ -66,6 +66,8 @@
 				var varPubDate = $(allItemList[j]).find('pubDate').text();				
 				var author =getAuthor(varLink);
 				
+				console.log("----original--------------------------------");
+				console.log(varDescription);
 				if (varDescription.indexOf("</div") !== -1)
 				{
 				   varDescription = varDescription.substring(0, varDescription.indexOf("</div>")) +"</div>";
@@ -73,11 +75,11 @@
 				varDescription = varDescription.replace(/<strong>/g,'');
 				varDescription = varDescription.replace(/<\/strong>/g,'');
 				                                 
-				varDescription = varDescription.replace(/<p.../g,'');
+				varDescription = varDescription.replace(/<p\.\.\./g,'');
 				console.log("--------------------------------------");
 				console.log(varDescription);
 				
-				varDescription = varDescription.replace(/... /g,'...</p>');
+				varDescription = varDescription.replace(/\.\.\. /g,'...</p>');
 				
 				var rowType ="odd";
 				if (j%2 == 0)
