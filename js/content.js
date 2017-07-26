@@ -79,8 +79,8 @@
 				console.log("--------------------------------------");
 				console.log(varDescription);
 				
-				varDescription = varDescription.replace(/\.\.\. /g,'...</p>');
-				
+				varDescription = varDescription.replace(/<\/p\.\.\./g,'</p>');
+				varDescription = varDescription.replace(/<\.\.\./g,'</p>');
 				var rowType ="odd";
 				if (j%2 == 0)
 					rowType="even";
