@@ -81,6 +81,7 @@
 				varDescription = varDescription.replace(/<\/b/g,'');
 				
 				varDescription = varDescription.replace(/<p\.\.\./g,'');				
+				varDescription = varDescription.replace(/<\/\.\.\./g,'');
 				
 				varDescription = varDescription.replace(/<\/p\.\.\./g,'</p>');
 				varDescription = varDescription.replace(/<\.\.\./g,'</p>');
